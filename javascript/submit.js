@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.getElementById("contactForm");
 
   contactForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Премахва default функцията на submit
+    // Removes the default submit functionality
+    event.preventDefault();
 
-    // Redirect-ва към email-sent.html
+    // Redirects to email-sent.html
     window.location.href = "email-sent.html";
   });
 });
